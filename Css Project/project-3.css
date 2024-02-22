@@ -1,0 +1,633 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	font-family: sans-serif monospace;
+}
+#banner{
+	background:linear-gradient(rgba(0, 0, 0,0),skyblue), url(studio/studio/pic-1.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	margin: 5px ;
+	border: 2px solid skyblue;
+	box-shadow: 0 0 5px 5px black;
+	border-radius: 5px;
+}
+a:hover{
+	color: black;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	margin: 5px ;
+	border: 2px solid skyblue;
+	box-shadow: 0 0 5px 5px black inset;
+	border-radius: 5px;
+
+}
+#logo{
+	
+	position: absolute;
+	top: 5%;
+	left: 6%;
+	color: white;
+	padding: 10px;
+	border: 3px double white;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 8px 3px black;
+	text-decoration: underline;
+	
+}
+#bubble img{
+	width: 50px;
+	animation: bubble 7s linear infinite;
+	border-radius: 50%;
+}
+#bubble{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0px;
+}
+@keyframes bubble{
+	0%{
+		transform: translateY(-10vh);
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	70%{
+		
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+}
+#bubble img:nth-child(1){
+	animation-delay: -0.5s;
+}
+#bubble img:nth-child(2){
+	animation-delay: -9s;
+	width: 25px;
+}
+#bubble img:nth-child(3){
+	animation-delay: -0s;
+	width: 35px;
+}
+#bubble img:nth-child(4){
+	animation-delay: -3.7s;
+	width: 50px;
+}
+#bubble img:nth-child(5){
+	animation-delay: -8s;
+	width: 40px;
+}
+#bubble img:nth-child(6){
+	animation-delay: -0.5s;
+	width: 35px;
+}
+#bubble img:nth-child(7){
+	animation-delay: -2s;
+	width: 25px;
+}
+
+#banner-text{
+	text-align: center;
+	padding-top: 180px;
+	color: white;
+}
+#banner-text h1{
+	font-size: 130px;
+	font: bold;
+	color: black;
+	font-family: monospace;
+	box-sizing: border-box;
+}
+#banner-text p{
+	font-size: 25px;
+	font-style: italic;
+	color: black;
+	display: inline-block;
+	border-bottom: 5px double whitesmoke;	
+}
+
+#banner-btn{
+	margin:30px;
+}
+#banner-btn a{
+	width: 250px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 40px;
+	margin-top: 40px;
+	padding: 25px 0;
+	color: white;
+	font-size: 18px;
+	border: 5px double black;
+	position: relative;
+	box-sizing: border-box;
+	box-shadow: 0 0 30px 0 black inset;
+	transform: translate(0px);
+	transition: transform 1s;
+	transform-origin: center;
+}
+#banner-btn a:hover{
+	transform: translate(10px);
+	background: linear-gradient(to left, deepskyblue,whitesmoke);
+	border: 5px double black;
+	color: black;
+	box-shadow: 0 0 20px 0 black inset;
+
+}
+#sidenav{
+	width: 200px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: linear-gradient(to left, gray,skyblue);
+	z-index: 2;
+	transition: 0.3s;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#menubtn{
+	width: 50px;
+    height: 50px;
+	position: fixed;
+	background: skyblue;
+	text-align: center;
+	right: 30px;
+	top: 20px;
+	border-radius: 5px;
+	z-index: 3;
+	cursor: pointer;
+
+}
+#menubtn img{
+	width: 100%;
+	height: 100%;
+	position: sticky;
+    
+}	
+    /*   -------- Features -------- */
+
+#feature{
+	width: 100%;
+	padding: 70px 0;
+}
+#text-tittle{
+	text-align: center;
+	padding-bottom: 70px;
+}
+#text-tittle p{
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	font-weight: bold;
+
+	font-size: 30px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+
+}
+#text-tittle p::after{
+	content: "";
+	height:35px ;
+	width: 50px;
+	background: linear-gradient(to left,skyblue,whitesmoke);
+	position: absolute;
+	top: -20px;
+	left: 0;
+	z-index: -1;
+	transform: rotate(10deg);
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+#text-tittle h1{
+	font-size: 50px;
+	margin-top: 10px;
+}
+#Features-box{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: auto;
+	align-items: center;
+}
+#Features{
+	flex-basis: 50%;
+}
+#Features-img{
+	flex-basis: 50%;
+	margin: auto;
+}
+#Features-img img{
+	width: 70%;
+	border: 1px solid skyblue;
+	padding: 5px;
+	border-radius: 10px;
+
+}
+#Features h1{
+	margin-bottom: 10px;
+	color: skyblue;
+	font-weight: 100;
+	text-align: left;
+}
+#Features-desc{
+
+	display: flex;
+	margin-bottom: 40px;
+	align-items: center;
+}
+#Features-icon .fa{
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	line-height: 50px;
+	border-radius: 10px;
+	color: skyblue;
+	border: 1px solid skyblue;
+}
+#Features-text p{
+	padding: 0 20px;
+	text-align: initial;
+}
+#Service{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+}
+#menservice{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+#womenservice{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+
+}
+
+#baby{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+
+#menhaircut{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+
+}
+#hairdryman{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+#coloringman{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+
+}
+#beard{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+#facialman{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+
+}
+#hairspaman{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+#women{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+
+}
+#eyebrow{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+#facial{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+
+}
+#Coloring{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+#straightening{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to right,whitesmoke,gray);
+
+}
+#hairspa{
+	width: 100%;
+	padding: 70px 0px;
+	background: linear-gradient(to left,whitesmoke,gray);
+
+}
+
+#Service-box{
+	width: 80%;
+	margin: auto;
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+}
+#single-service{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	transition: 1s;
+}
+#single-service img{
+	width: 100%;
+	border-radius: 20px;
+}
+#overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	background: linear-gradient(rgba(0,0.5,0,0.1),skyblue);
+	opacity: 0;
+	
+}
+#single-service:hover #overlay{
+	opacity: 1;
+} 
+#services-desc{
+	width: 80%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	opacity: 0;
+	transform: translateX(-50%);
+	transition: 1s;
+}
+hr{
+	background: skyblue;
+	height: 2px;
+	border: 0;
+	margin: 15px auto;
+	width: 60%;
+}
+#services-desc{
+	font-size: 14px;
+}
+#single-service:hover #services-desc{
+	bottom: 40%;
+	opacity: 1;
+}
+#testimonial{
+	width: 100%;
+	margin: 70px 0;
+}
+#testimonial-row{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-content: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#testimonial-col{
+	flex-basis: 30%;
+	padding: 10px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	box-shadow:0 5px 20px 3px gray ;
+	cursor: pointer;
+	transform: scale(1);
+	
+}
+#testimonial-col p{
+	font-size: 14px;
+
+}
+#user{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+#user img{
+	width: 50px;
+	margin-right: 20px;
+	border-radius: 30px;
+}
+#user-info .fa-twitter{
+	color: skyblue;
+	margin-left: 10px;
+	font-size: 20px;
+	transform: scale(1);
+}
+#user-info .fa-twitter:hover{
+	color: blue;
+	transform: scale(1.1);
+}
+
+#user-info .fa-instagram{
+	color: darkred;
+	margin-left: 10px;
+	font-size: 20px;
+	transform: scale(1);
+}
+#user-info .fa-instagram:hover{
+	color: red;
+	transform: scale(1.1);
+}
+
+
+#user-info small{
+	color: skyblue;
+}
+#testimonial-col:hover{
+	transform: scale(1.1);
+}
+
+
+/* --- footer --- */
+#footer{
+	padding: 100px 0 20px;
+	background: lightgray;
+	position: relative;
+}
+#footer-row{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+#footer-row h1{
+	margin: 20px 0;
+	
+}
+
+#footer-row p{
+	line-height: 36px;
+}
+#footer-row .fa{
+	font-size: 30px;
+	margin: 10px;
+	color: skyblue;
+	transform: translateX(0px);
+	
+
+}
+#footer-row .fa:hover{
+	transform: translateX(10px);
+	color: white;
+
+}
+
+
+#footer-left{
+	flex-basis: 45%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#footer-right{
+	padding: 20px;
+	margin-bottom: 20px;
+
+	text-align: right;
+}
+#footer-pic{
+	
+	width:370px;
+	opacity: 0.3;
+	position: absolute;
+	left: 37%;
+	top: 40%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	border-radius: 50%;
+	transform: scale(1);
+}
+#footer-pic:hover{
+
+	transform: scale(1.1);
+	opacity: 1;
+	box-shadow: 0 0 40px 20px skyblue;
+
+}
+#social-link{
+	text-align: center;
+	margin-top: 20px;
+}
+#social-link .fa-facebook{
+	
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	margin: 5px;
+	border: 2px solid skyblue;
+	transform: translateY(0px);
+}
+#social-link .fa-facebook:hover{
+	transform: translateY(-10px);
+	background-color: deepskyblue;
+	color: white;
+
+}
+#social-link .fa-instagram{
+	
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	margin: 5px;
+	border: 2px solid skyblue;
+	transform: translateY(0px);
+}
+#social-link .fa-instagram:hover{
+	transform: translateY(-10px);
+	background-color: firebrick;
+	color: white;
+	border: 2px solid white;
+	
+
+}
+
+#social-link .fa-twitter{
+	
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	font-size: 20px;
+	margin: 5px;
+	border: 2px solid skyblue;
+	transform: translateY(0px);
+}
+#social-link .fa-twitter:hover{
+	transform: translateY(-10px);
+	background-color: deepskyblue;
+	color: white;
+
+}
+
+#social-link p{
+	font-size: 20px;
+	margin-top: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 5px 10px gray;
+	padding: 10px;
+	
+}
+
